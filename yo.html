@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+ <html>
+    
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="yoo.css">
+        
+        <title>yoo</title>
+
+    </head>
+    <body>
+      <script src="yoo.js"></script>
+      
+          <form id="myForm">
+               <span class="form_col">sexe :</span>
+               <label><input name="sex" type="radio" value="H"/> Homme</label>
+               <label><input name="sex" type="radio" value="F"/>Femme</label>
+               <span class="tooltip"> vous devez selectionnez votre sexe</span>
+               <br/><br/>
+
+               <label class="form_col" for="lastName">Nom:</label>
+              <input name="lastName" id="lastName" type="text"/>
+              <span class="tooltip"> un nom ne peut pas faire moins de 2 caractere</span>
+              <br/><br/>
+
+              <label class="form_col" for="firstName">Prenom</label>
+              <input name="firstName" id="firstName" type="text"/>
+              <span class="tooltip"> un prenom ne peut faire moins de 2 caractere</span>
+              <br/><br/>
+
+              <label class="form_col" for="age">Age :</label>
+              <input name="Age" id="Age" type="number"/>
+              <span class="tooltip"> l'age doit etre compris entre 0 et 140</span>
+              <br/><br/>
+              
+              <label class="form_col" for="login">Pseudo</label>
+              <input name="login" id="login" type="text"/>
+              <span class="tooltip"> le pseudo ne peut faire moins de 4 caractere</span>
+              <br/><br/>
+
+              <label class="form_col" for="pwd1">mot de passe</label>
+              <input name="pwd1" id="pwd1" type="password"/>
+              <span class="tooltip"> le mot de passe ne peut faire moins de 2 caractere</span>
+              <br/><br/>
+
+              <label class="form_col" for="county">Pays :</label>
+
+              <select name="country" id="country">
+                <option value="none"> selectionnez votre pays</option>
+                <option value="en"> angleterre</option>
+                <option value="cmr"> cammeroun</option>
+                <option value="civ"> cote d'ivoire</option>
+                <option value="sen"> senegal</option>
+              </select>
+              <span class="tooltip">selectionnez un pays</span>
+              <br/><br/>
+
+              <span class="form_col"></span>
+              <label><input name="news" type="checkbox"/> je desire ecevoir les nouvelles chaque mois</label>
+              <br/><br/>
+
+              <span class="form_col"></span>
+              <input type="submit" value="M'inscrire"/> <input type="reset"
+              value="reinitialisez le formulaire"/>
+            
+            </form> 
+    </body>
+ </html>
